@@ -24,7 +24,8 @@ YES
 NO
 YES
 """
-
+n = int(input())
+results = []
 for _ in range(n):           
     s = input().lower()        
     is_palin = True            
@@ -36,6 +37,9 @@ for _ in range(n):
         results.append("YES")
     else:
         results.append("NO")
+
+for r in results:
+    print(r)
 
 # results = []
 # for i in range(n):
