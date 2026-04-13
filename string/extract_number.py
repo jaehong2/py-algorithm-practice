@@ -19,16 +19,17 @@ t0e0a1c2h0er
 16
 """
 
-n = input()
-result = ""
-for c in n:
+s = input()
+res = ""
+for c in s:
     if(c.isdecimal()):
-        result += c
+        res += c
         
-num = int(result)
+num = int(res)
 print(num)
+
 cnt = 0
 for i in range(1, num+1):
-    if num%i == 0:
+    if num % i == 0:
         cnt+=1
 print(cnt)
