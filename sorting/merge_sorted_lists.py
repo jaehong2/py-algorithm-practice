@@ -34,11 +34,8 @@ while p1 < n and p2 < m:
             c.append(b[p2])
             p2 += 1
 
-if p1 == n-1:
-      c += b[p2:]
+c += a[p1:]
+c += b[p2:]
 
-if p2 == m-1:
-      c += a[p1:]
-
-for i in range(c):
-      print(i)
+for i in c:
+      print(i, end=' ')
